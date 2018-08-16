@@ -110,6 +110,7 @@ public class SingleClassesTest {
   @Test public void testEmptyBlocks() { doTest("pkg/TestEmptyBlocks"); }
   @Test public void testPrivateEmptyConstructor() { doTest("pkg/TestPrivateEmptyConstructor"); }
   @Test public void testSynchronizedUnprotected() { doTest("pkg/TestSynchronizedUnprotected"); }
+  @Test public void testFieldSingleAccess() { doTest("pkg/TestFieldSingleAccess"); }
 
 
   // TODO: fix all below
@@ -123,7 +124,9 @@ public class SingleClassesTest {
   @Test public void testGroovyClass() { doTest("pkg/TestGroovyClass"); }
   @Test public void testGroovyTrait() { doTest("pkg/TestGroovyTrait"); }
   @Test public void testPrivateClasses() { doTest("pkg/PrivateClasses"); }
-
+  @Test public void testSuspendLambdaKt() { doTest("pkg/TestSuspendLambdaKt"); }
+  @Test public void testNamedSuspendFun2Kt() { doTest("pkg/TestNamedSuspendFun2Kt"); }
+  
   private void doTest(String testFile, String... companionFiles) {
     ConsoleDecompiler decompiler = fixture.getDecompiler();
 
